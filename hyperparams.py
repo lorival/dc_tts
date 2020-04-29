@@ -32,7 +32,7 @@ class Hyperparams:
     attention_win_size = 3
 
     # data
-    data = "/data/private/voice/LJSpeech-1.0"
+    data = "/floyd/input/ljspeech"
     # data = "/data/private/voice/kate"
     test_data = 'harvard_sentences.txt'
     vocab = "PE abcdefghijklmnopqrstuvwxyz'.?" # P: Padding, E: EOS.
@@ -40,7 +40,7 @@ class Hyperparams:
     max_T = 210 # Maximum number of mel frames.
 
     # training scheme
-    lr = 0.001 # Initial learning rate.
+    lr = 0.01 # Initial learning rate. # 0.001
     logdir = "logdir/LJ01"
     sampledir = 'samples'
     B = 32 # batch size
